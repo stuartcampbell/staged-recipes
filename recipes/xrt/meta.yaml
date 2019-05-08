@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/kklmn/{{ name }}/archive/{{ version }}.tar.gz
+  url: https://github.com/kklmn/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: 1c4e4db630298b9af2d98bef85f8c6c13a8dbac7ad707a8ea7f680b64a0c91d2
  
 build:
@@ -32,7 +32,11 @@ requirements:
     - pip
   run:
     - python
-    - pyopencl
+    - numpy
+    - scipy
+    - matplotlib
+    - sphinx
+    # - pyopencl  - Not sure if we need this
 
 test:
   # Some package might need a `test/commands` key to check CLI.
