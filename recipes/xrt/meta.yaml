@@ -39,6 +39,12 @@ test:
   # List all the packages/modules that `run_test.py` imports.
   imports:
     - xrt
+    - xrt.backends
+    - xrt.backends.raycing 
+    - xrt.gui
+    - xrt.gui.commons
+    - xrt.gui.xrtGlow
+    - xrt.gui.xrtQook
 
 about:
   home: https://xrt.readthedocs.io/
